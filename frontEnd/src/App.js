@@ -25,12 +25,14 @@ import ManagerVerify from './pages/Manager/managerVerify';
 import CustomerForgotPassword from './pages/Customer/customerForgotPassword';
 import EmployeeForgotPassword from './pages/Employee/employeeForgotPassword';
 import ManagerForgotPassword from './pages/Manager/managerForgotPassword';
+import CustomerConfirmAccount from './pages/Customer/customerConfirmAccount';
+
 function App() {
   return (
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<SignIn />} />
+          <Route path="/" element={<CustomerConfirmAccount />} />
           <Route path="/customerRegister" element={<CustomerRegister />} />
           <Route path="/managerRegister" element={<ManagerRegister />} />
           <Route path="/employeeRegister" element={<EmployeeRegister />} />
